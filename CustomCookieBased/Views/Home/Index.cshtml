@@ -1,0 +1,18 @@
+﻿@model UserSignInModel
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<form method="post" asp-action="SignIn"> 
+
+			<input asp-for="@Model.UserName" />
+			<input asp-for="@Model.Password" />
+			<input type="checkbox" asp-for="@Model.Remember"/> <label>Beni hatırla</label>
+
+			<div>
+				<button type="submit">Giriş Yap</button>
+			</div>
+		</form>
+	</body>
+</html>
